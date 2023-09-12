@@ -1,0 +1,57 @@
+body {
+  width: 300px;
+  grid-template-columns: max-content;
+  margin: 0px;
+}
+
+.header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+button {
+  border-radius: 0px;
+  margin: 0;
+  border-bottom: 1px solid aliceblue;
+  color: black;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  margin: 0px;
+  background: white;
+}
+
+button,
+[role='button'],
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+label[type='button'] {
+  background-color: orange;
+  color: black;
+  padding: 10px;
+  background-color: #322a2a;
+  color: white;
+  font-size: 14px;
+}
+
+button:focus,
+button:enabled:hover,
+[role='button']:focus,
+[role='button']:not([aria-disabled='true']):hover,
+input[type='submit']:focus,
+input[type='submit']:enabled:hover,
+input[type='reset']:focus,
+input[type='reset']:enabled:hover,
+input[type='button']:focus,
+input[type='button']:enabled:hover,
+label[type='button']:focus,
+label[type='button']:hover {
+  filter: unset;
+  background-color: #d49d1c;
+  color: white;
+  cursor: pointer;
+}

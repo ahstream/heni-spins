@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spins</title>
+    <link rel="stylesheet" type="text/css" href="/styles/spins.css" />
+  </head>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 20px;
+      align-items: stretch;
+    }
+    .grid img {
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+      max-width: 100%;
+    }
+  </style>
+
+  <body>
+    <h1>Spins</h1>
+
+    <main class="grid" id="spins"></main>
+  </body>
+  <script src="../src/hxUtils.js"></script>
+  <script src="../src/spins.js"></script>
+</html>

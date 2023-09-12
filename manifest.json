@@ -1,0 +1,22 @@
+{
+  "name": "Heni spins",
+  "description": "Utility for creating spins of heni.com generated art",
+  "version": "1.1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "/src/serviceWorker.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting", "contextMenus", "tabs", "identity", "identity.email"],
+
+  "action": {
+    "default_popup": "html/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://heni.com/*"],
+      "css": [],
+      "js": ["/src/content.js", "/src/hxUtils.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+.hx-statusbar {
+  background-color: orange;
+  color: #373636;
+  width: 100%;
+  height: auto;
+  padding: 4px 10px;
+  border-bottom: 2px solid white;
+}
+
+#hx-statusbar.info {
+  background-color: #0d47a1;
+  color: white;
+  background-color: orange;
+  color: #373636;
+}
+
+#hx-statusbar.ok {
+  background-color: rgb(52, 233, 7);
+  color: black;
+  background-color: orange;
+  color: #373636;
+}
+
+#hx-statusbar.error {
+  background-color: rgb(209, 56, 9);
+  color: white;
+}
